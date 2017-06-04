@@ -1,0 +1,160 @@
+        body{
+            background: #f4f3ed;
+        }
+        .clearfix::after{
+            content:'';
+            display: block;
+            clear: both;
+
+        }
+        .hidden{
+            display: none!important;
+            visibility: hidden!important;
+        }
+
+        /* 单选按钮 */
+        .radio label{
+            display: block;
+            width: 16px;
+            height: 16px;
+            float: left;
+            margin-right: 10px;
+            position: relative;
+            border-radius: 50%;
+            background-image: linear-gradient(to bottom, #ECE7E5, #E2DDDB);
+            box-shadow: inset 0 1px 1px #A7A7A6;
+        }
+        .radio input{
+            padding: 0;
+            margin: 0;
+            /*box-sizing: border-box;*/
+        }    
+        .radio i{
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            
+        }
+        .radio input[type=radio]:checked+i {
+            top: 4px;
+            left: 4px;
+            width: 8px;
+            height: 8px;
+            background: #C8C7C4;
+            border-radius: 50%;
+            display: inline-block;
+            box-shadow: inset 0 1px 1px #959694;
+        }     
+        .box1 input[type=radio]:checked+i{
+            background: #E99250;
+            box-shadow: inset 0 1px 1px #BE7945;
+        }
+        .play{
+            margin-top: 30px;
+        }
+
+        /* 音乐按钮 */
+        .play label{
+            display: block;
+            width: 30px;
+            height: 30px;
+            float: left;
+            margin-right: 10px;
+            position: relative;          
+        }
+        .play span{
+            display: block;
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: linear-gradient(to bottom, #fdfcfb, #e4dfdc);
+            box-shadow: 0 2px 5px #aeadab;
+            border-radius: 5px;
+        }
+        .play i{
+            display: block;
+            position: absolute;
+            top: 10px;
+            left: 12px;
+            width: 0;
+            height: 0;
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+            border-left: 7px solid #ccc;
+            border-radius: 1px;
+
+        }
+        input[type=checkbox]:checked ~ span{
+            background: #fbfbf9;
+        }
+        
+        .play-two input[type=checkbox]:checked ~ span,
+        .play-four input[type=checkbox]:checked ~ span
+        {
+            background: #ece8e6;
+            box-shadow: inset 0 2px 5px #aeadab;
+        }
+        .play-two input[type=checkbox]:checked ~ i,
+        .play-four input[type=checkbox]:checked ~ i{
+             border-left: 7px solid #e99250;
+        }
+        .play .play-three span,.play .play-four span{
+            border-radius: 50%;
+        }
+        /* button样式 */
+        
+        .button{
+            margin-top: 30px;
+        }
+        .button label{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80px;
+            height: 31px;
+            background: linear-gradient(to bottom,#e3dfde,#ffffff);
+            border-radius: 3px;
+            float: left;
+            margin-right: 8px;
+
+        }
+        .button div{
+            width: 72px;
+            height: 22px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #7d8383;
+            font-size: 12px;
+            background: linear-gradient(to bottom,#fbfaf4,#ece8e6);
+            box-shadow: 0 2px 3px #cbc9c4;
+            border-radius: 2px;
+            cursor: pointer;
+            user-select: none;
+            
+        }
+        .button input[type=checkbox]:checked + div{
+            background: #fbfbf9;
+        }
+        .button .button2 input[type=checkbox]:checked + div,
+        .button .button4 input[type=checkbox]:checked + div{
+            background: #ece8e6;
+            box-shadow: inset 0 2px 3px #cbc9c4;
+            color: #e99250;
+        }
+        .button label.button3,
+        .button label.button4{
+            border-radius: 30px;
+        }
+        .button label.button3 div,
+        .button label.button4 div{
+            border-radius: 30px;
+        }
+        
+
+
+
+        
