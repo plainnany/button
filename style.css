@@ -54,6 +54,34 @@
             margin-top: 30px;
         }
 
+        /* checkbox */
+        .check{
+            margin-top: 30px;
+        }
+        .check label{
+           
+            width: 14px;
+            height: 14px;
+            float: left;
+            margin-right: 10px;
+            position: relative;
+            background: linear-gradient(to bottom,#ede8e6,#e0dddb);
+            box-shadow: inset 0 1px 1px #a7a7a6;  
+            border-radius: 1px;
+        }
+        .check1,.check2{
+            width: 14px;
+            height: 14px;
+            position: absolute;
+            
+        }
+        .check input:checked + .check1{
+            background: url(images/check1.gif) no-repeat 3px 3px;
+        }
+        .check input:checked + .check2{
+            background: url(images/check2.gif) no-repeat 3px 3px;
+        }
+
         /* 音乐按钮 */
         .play label{
             display: block;
@@ -153,7 +181,124 @@
         .button label.button4 div{
             border-radius: 30px;
         }
-        
+
+        /* share button */
+
+        .share{
+            width: 32px;
+            height: 32px;
+            margin-top: 30px;
+            background: linear-gradient(to bottom,#e3dfde,#ffffff);
+            border-radius: 50%;
+            position: relative;
+
+        }
+        .share a,.search a{
+            display: block;
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            top: 4px;
+            left: 4px;
+            border-radius: 50%;
+            background: linear-gradient(to bottom, #fbf7f2,#ebe7e5);
+            box-shadow: 0 2px 1px #bebeb7;
+        }
+        .share img,.search img{
+            position: absolute;
+            top: 6px;
+            left: 5px;
+        }
+
+        /* search */
+
+        .search{
+            width: 170px;
+            height: 32px;
+            background: linear-gradient(to bottom,#e3dfde,#ffffff);
+            position: relative;
+            margin-top: 30px;
+            border-radius: 50px;
+            color: #a1a6a6;
+        }
+        .search input{
+            display: block;
+            width: 94px;
+            position: absolute;
+            top: 7px;
+            left: 40px;
+            background: transparent;
+            border: none;
+            outline: none;
+            color: #a1a6a6;
+        }
+        /* switch */
+        .switch{
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .dot1,.dot2{
+            float: left;
+            width: 4px;
+            height: 4px;
+            margin-right: 6px;
+            margin-top: 6px;
+            border: 2px solid #e99250;
+            border-radius: 50%;
+        }
+        .dot1{
+            background: linear-gradient(to bottom,#f5f4f1,#f0eeeb);
+        }
+        .dot2{
+            background: #e99250;
+        }
+        .switch label{
+            float: left;
+            width: 50px;
+            height: 20px;
+            margin-right: 6px;
+            background: linear-gradient(to bottom,#e3dfde,#ffffff);
+            position: relative;
+            border-radius: 30px;
+        }
+        .switch .bg{
+            width: 42px;
+            height: 12px;
+            position: absolute;
+            top: 4px;
+            left: 4px;
+            background: linear-gradient(to bottom,#f2efeb,#f0ece7);
+            box-shadow: inset 0 2px 2px #bdbdb6;
+            border-radius: 20px;
+        }
+        .switch .circle{
+            width: 16px;
+            height: 16px;
+           
+            position: absolute;
+            top: 2px;
+            left: 3px;
+            background: linear-gradient(to bottom,#fbf9f3,#eae7e4);
+            border-radius: 50%;
+            box-shadow: 0 1px 2px #b9b6b2;
+
+        }
+        .circle div{
+            width: 8px;
+            height: 8px;
+            position: absolute;
+            top: 4px;
+            left: 4px;
+            background: linear-gradient(to bottom,#ccc,#fbf9f3);
+            border-radius: 50%;
+        }
+        .switch input:checked ~ .bg{
+            background: linear-gradient(to bottom,#fb9c53,#ec9551);
+            box-shadow: inset 0 2px 2px #ca793b
+        }
+        .switch input:checked ~ .circle{
+            left: 31px;
+        }
 
 
 
